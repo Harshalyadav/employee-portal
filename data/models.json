@@ -1,0 +1,247 @@
+[
+  {
+    "id": "mdl_001",
+    "name": "Chaos Model",
+    "description": "A high-volume cloud kitchen model focused on speed and efficiency with minimal staff requirements.",
+    "compactFormat": "Cloud Kitchen - Standard",
+    "status": "active",
+    "createdBy": "usr_001",
+    "createdAt": "2024-01-10T10:00:00Z",
+    "updatedAt": "2024-01-20T14:30:00Z",
+    "basicInformation": {
+      "modelName": "Chaos Model",
+      "tagline": "Fast, Efficient, Scalable",
+      "status": "active",
+      "createdOn": "2024-01-10T10:00:00Z",
+      "createdBy": "John Doe",
+      "description": "A high-volume cloud kitchen model focused on speed and efficiency with minimal staff requirements."
+    },
+    "investmentFinancialDetails": {
+      "purchaseFee": 50000,
+      "totalInvestment": 500000,
+      "investmentBreakdown": "Equipment: 40%, Furniture: 20%, Technology: 25%, Working Capital: 15%",
+      "royaltyFee": 5,
+      "estimatedMonthlyRevenue": 150000,
+      "breakEvenMonths": 8
+    },
+    "infrastructureRequirements": {
+      "minimumAreaRequired": 1500,
+      "areaUnit": "sq ft",
+      "frontageRequired": 25,
+      "ceilingHeight": 12,
+      "parkingSpaces": 5,
+      "utilities": "3-phase power supply, High-speed internet, Water treatment system"
+    },
+    "operationsStaffing": {
+      "requiredStaffCount": 8,
+      "roles": "Head Chef, 2 Line Cooks, 3 Delivery Executives, Kitchen Manager, Order Fulfillment Staff",
+      "setupDuration": 30,
+      "operatingHours": "11 AM - 11 PM",
+      "workingDays": true,
+      "supportAvailable": true
+    },
+    "legalPolicyDetails": {
+      "agreementValidity": 5,
+      "renewalPolicy": "Renewable for another 5 years with mutual consent",
+      "exitPolicy": "30 days notice required",
+      "licenseRequirements": "FSSAI License, GST Registration, Local Municipal Approval",
+      "documentUpload": "https://example.com/chaos-model-agreement.pdf"
+    }
+  },
+  {
+    "id": "mdl_002",
+    "name": "Premium Dine-In Model",
+    "description": "Full-service restaurant model with premium ambiance, dine-in facilities, and comprehensive dining experience.",
+    "compactFormat": "Full Service Restaurant",
+    "status": "active",
+    "createdBy": "usr_001",
+    "createdAt": "2024-01-12T09:15:00Z",
+    "updatedAt": "2024-01-22T11:45:00Z",
+    "basicInformation": {
+      "modelName": "Premium Dine-In Model",
+      "tagline": "Elevated Dining Experience",
+      "status": "active",
+      "createdOn": "2024-01-12T09:15:00Z",
+      "createdBy": "John Doe",
+      "description": "Full-service restaurant model with premium ambiance, dine-in facilities, and comprehensive dining experience."
+    },
+    "investmentFinancialDetails": {
+      "purchaseFee": 100000,
+      "totalInvestment": 1200000,
+      "investmentBreakdown": "Construction: 35%, Equipment: 30%, Furniture & Decor: 20%, Technology: 10%, Working Capital: 5%",
+      "royaltyFee": 6,
+      "estimatedMonthlyRevenue": 300000,
+      "breakEvenMonths": 12
+    },
+    "infrastructureRequirements": {
+      "minimumAreaRequired": 3500,
+      "areaUnit": "sq ft",
+      "frontageRequired": 40,
+      "ceilingHeight": 14,
+      "parkingSpaces": 20,
+      "utilities": "3-phase power supply, High-speed internet, Water treatment system, Separate exhaust system"
+    },
+    "operationsStaffing": {
+      "requiredStaffCount": 25,
+      "roles": "Executive Chef, Sous Chef, 6 Line Cooks, 10 Servers, 2 Bartenders, Kitchen Manager, Front-of-House Manager, Hostess",
+      "setupDuration": 60,
+      "operatingHours": "12 PM - 12 AM",
+      "workingDays": false,
+      "supportAvailable": true
+    },
+    "legalPolicyDetails": {
+      "agreementValidity": 5,
+      "renewalPolicy": "Renewable for another 5 years with performance review",
+      "exitPolicy": "60 days notice required",
+      "licenseRequirements": "FSSAI License, GST Registration, Liquor License (if applicable), Local Permits",
+      "documentUpload": "https://example.com/premium-dine-in-agreement.pdf"
+    }
+  },
+  {
+    "id": "mdl_003",
+    "name": "Quick Service Restaurant (QSR)",
+    "description": "Fast-casual dining model with quick turnaround, standardized menu, and efficient service.",
+    "compactFormat": "QSR - Standard",
+    "status": "active",
+    "createdBy": "usr_001",
+    "createdAt": "2024-01-08T08:30:00Z",
+    "updatedAt": "2024-01-18T10:20:00Z",
+    "basicInformation": {
+      "modelName": "Quick Service Restaurant (QSR)",
+      "tagline": "Fast, Fresh, Affordable",
+      "status": "active",
+      "createdOn": "2024-01-08T08:30:00Z",
+      "createdBy": "Jane Smith",
+      "description": "Fast-casual dining model with quick turnaround, standardized menu, and efficient service."
+    },
+    "investmentFinancialDetails": {
+      "purchaseFee": 75000,
+      "totalInvestment": 750000,
+      "investmentBreakdown": "Equipment: 40%, Furniture: 15%, Technology: 25%, Working Capital: 20%",
+      "royaltyFee": 5.5,
+      "estimatedMonthlyRevenue": 200000,
+      "breakEvenMonths": 10
+    },
+    "infrastructureRequirements": {
+      "minimumAreaRequired": 2000,
+      "areaUnit": "sq ft",
+      "frontageRequired": 30,
+      "ceilingHeight": 12,
+      "parkingSpaces": 10,
+      "utilities": "3-phase power, High-speed internet, Water treatment, Ventilation system"
+    },
+    "operationsStaffing": {
+      "requiredStaffCount": 12,
+      "roles": "Kitchen Manager, 4 Line Cooks, 6 Counter Staff, 1 Supervisor",
+      "setupDuration": 45,
+      "operatingHours": "10 AM - 10 PM",
+      "workingDays": false,
+      "supportAvailable": true
+    },
+    "legalPolicyDetails": {
+      "agreementValidity": 5,
+      "renewalPolicy": "Renewable with performance metrics review",
+      "exitPolicy": "45 days notice required",
+      "licenseRequirements": "FSSAI License, GST Registration, Local Health Permit",
+      "documentUpload": "https://example.com/qsr-agreement.pdf"
+    }
+  },
+  {
+    "id": "mdl_004",
+    "name": "Cafe & Bakery Model",
+    "description": "Cafe model with in-house bakery, beverages, and light snacks with comfortable seating.",
+    "compactFormat": "Cafe & Bakery",
+    "status": "draft",
+    "createdBy": "usr_002",
+    "createdAt": "2024-01-15T11:00:00Z",
+    "updatedAt": "2024-01-15T11:00:00Z",
+    "basicInformation": {
+      "modelName": "Cafe & Bakery Model",
+      "tagline": "Brew, Bake, Relax",
+      "status": "draft",
+      "createdOn": "2024-01-15T11:00:00Z",
+      "createdBy": "Jane Smith",
+      "description": "Cafe model with in-house bakery, beverages, and light snacks with comfortable seating."
+    },
+    "investmentFinancialDetails": {
+      "purchaseFee": 40000,
+      "totalInvestment": 400000,
+      "investmentBreakdown": "Equipment: 35%, Furniture & Decor: 30%, Baking Supplies: 20%, Technology: 15%",
+      "royaltyFee": 4.5,
+      "estimatedMonthlyRevenue": 80000,
+      "breakEvenMonths": 15
+    },
+    "infrastructureRequirements": {
+      "minimumAreaRequired": 1200,
+      "areaUnit": "sq ft",
+      "frontageRequired": 20,
+      "ceilingHeight": 10,
+      "parkingSpaces": 3,
+      "utilities": "Single-phase power, Internet, Water supply, Basic ventilation"
+    },
+    "operationsStaffing": {
+      "requiredStaffCount": 6,
+      "roles": "Head Baker, 2 Baristas, Kitchen Assistant, 2 Servers",
+      "setupDuration": 25,
+      "operatingHours": "7 AM - 9 PM",
+      "workingDays": false,
+      "supportAvailable": true
+    },
+    "legalPolicyDetails": {
+      "agreementValidity": 3,
+      "renewalPolicy": "Renewable for 2-year terms",
+      "exitPolicy": "30 days notice",
+      "licenseRequirements": "FSSAI License, GST Registration",
+      "documentUpload": "https://example.com/cafe-bakery-agreement.pdf"
+    }
+  },
+  {
+    "id": "mdl_005",
+    "name": "Delivery-Only Kitchen",
+    "description": "Ghost kitchen model optimized for delivery orders with minimal front-of-house operations.",
+    "compactFormat": "Ghost Kitchen - Delivery",
+    "status": "inactive",
+    "createdBy": "usr_001",
+    "createdAt": "2024-01-01T07:00:00Z",
+    "updatedAt": "2024-01-10T09:30:00Z",
+    "basicInformation": {
+      "modelName": "Delivery-Only Kitchen",
+      "tagline": "Deliver Excellence",
+      "status": "inactive",
+      "createdOn": "2024-01-01T07:00:00Z",
+      "createdBy": "John Doe",
+      "description": "Ghost kitchen model optimized for delivery orders with minimal front-of-house operations."
+    },
+    "investmentFinancialDetails": {
+      "purchaseFee": 35000,
+      "totalInvestment": 350000,
+      "investmentBreakdown": "Equipment: 45%, Packaging: 25%, Technology: 20%, Working Capital: 10%",
+      "royaltyFee": 4,
+      "estimatedMonthlyRevenue": 120000,
+      "breakEvenMonths": 7
+    },
+    "infrastructureRequirements": {
+      "minimumAreaRequired": 1000,
+      "areaUnit": "sq ft",
+      "frontageRequired": 15,
+      "ceilingHeight": 10,
+      "parkingSpaces": 2,
+      "utilities": "3-phase power, Internet connection, Basic water supply"
+    },
+    "operationsStaffing": {
+      "requiredStaffCount": 5,
+      "roles": "Kitchen Manager, 3 Line Cooks, Packaging & QC Staff",
+      "setupDuration": 20,
+      "operatingHours": "12 PM - 11 PM",
+      "workingDays": false,
+      "supportAvailable": false
+    },
+    "legalPolicyDetails": {
+      "agreementValidity": 3,
+      "renewalPolicy": "Annual review based on metrics",
+      "exitPolicy": "15 days notice",
+      "licenseRequirements": "FSSAI License, GST, Delivery Partner Agreements",
+      "documentUpload": "https://example.com/delivery-kitchen-agreement.pdf"
+    }
+  }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Yogesh Sahu",
+        "role": "Admin",
+        "status": "active",
+        "createdBy": "System",
+        "date": "2025-11-01"
+    },
+    {
+        "name": "Rahul Mehta",
+        "role": "Manager",
+        "status": "inactive",
+        "createdBy": "Yogesh",
+        "date": "2025-10-15"
+    },
+    {
+        "name": "Anjali Verma",
+        "role": "Staff",
+        "status": "active",
+        "createdBy": "Rahul",
+        "date": "2025-11-10"
+    }
+]

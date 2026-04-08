@@ -1,0 +1,62 @@
+import { RecipeCategory } from "@/types/recipe-category.type";
+
+export const recipeCategoriesData: RecipeCategory[] = [
+    {
+        id: "rcat_001",
+        name: "Beverages",
+        slug: "beverages",
+        description: "Drinks etc.",
+        imageUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Beverages",
+        videoUrl: "https://cdn.app.com/beverages.mp4",
+        status: "active",
+        createdAt: "2024-01-05T10:00:00Z",
+        updatedAt: "2024-01-25T14:30:00Z",
+        linkedRecipes: [
+            {
+                recipeId: "rcp_001",
+                recipeName: "Cold Coffee",
+                recipeType: "Beverage",
+                price: 120,
+                status: "Active",
+            },
+            {
+                recipeId: "rcp_002",
+                recipeName: "Iced Coffee",
+                recipeType: "Beverage",
+                price: 100,
+                status: "Active",
+            },
+            {
+                recipeId: "rcp_004",
+                recipeName: "Cappuccino",
+                recipeType: "Beverage",
+                price: 140,
+                status: "Active",
+            },
+        ],
+    },
+    {
+        id: "rcat_002",
+        name: "Main Course",
+        slug: "main-course",
+        description: "Full meals",
+        imageUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=MainCourse",
+        videoUrl: "https://cdn.app.com/main-course.mp4",
+        status: "active",
+        createdAt: "2024-01-10T09:00:00Z",
+        updatedAt: "2024-01-25T11:20:00Z",
+        linkedRecipes: [],
+    },
+    {
+        id: "rcat_003",
+        name: "Desserts",
+        slug: "desserts",
+        description: "Sweets list",
+        imageUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Desserts",
+        videoUrl: "https://cdn.app.com/desserts.mp4",
+        status: "inactive",
+        createdAt: "2024-01-08T08:30:00Z",
+        updatedAt: "2024-01-22T15:45:00Z",
+        linkedRecipes: [],
+    },
+];

@@ -1,0 +1,15 @@
+{
+  "recipes": [
+    {
+      "id": "RCP001",
+      "recipeName": "Cold Coffee",
+      "recipeType": "Ready-to-Serve",
+      "category": "Beverage",
+      "preparationTime": 2,
+      "description": "A refreshing cold coffee served with milk & ice",
+      "status": "Active",
+      "createdAt": "2024-01-15T10:30:00Z",
+      "updatedAt": "2024-01-15T10:30:00Z"
+    }
+  ]
+}

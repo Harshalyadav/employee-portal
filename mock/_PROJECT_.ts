@@ -1,0 +1,40 @@
+const MOCK_PROJECT = [
+    {
+        id: "proj-1",
+        builderId: "builder-1",
+        name: "Sunrise Residency",
+        logo: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=200&h=200&fit=crop",
+        location: "North Valley",
+        address: "100 Valley View Rd, North Valley",
+        status: "ongoing",
+        totalProperties: 45,
+        createdBy: "System",
+        date: "2025-09-01",
+    },
+    {
+        id: "proj-2",
+        builderId: "builder-2",
+        name: "Tech Park Plaza",
+        logo: "https://images.unsplash.com/photo-1486718448742-163732cd1544?w=200&h=200&fit=crop",
+        location: "Tech City",
+        address: "200 Innovation Drive, Tech City",
+        status: "completed",
+        totalProperties: 30,
+        createdBy: "Yogesh",
+        date: "2025-08-15",
+    },
+    {
+        id: "proj-3",
+        builderId: "builder-3",
+        name: "Green Heights",
+        logo: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=200&h=200&fit=crop",
+        location: "Eco District",
+        address: "300 Green Ave, Eco District",
+        status: "upcoming",
+        totalProperties: 60,
+        createdBy: "Rahul",
+        date: "2025-11-05",
+    },
+];
+
+export { MOCK_PROJECT };

@@ -1,0 +1,43 @@
+const MOCK_INQUIRY = [
+    {
+        id: "inq-1",
+        builderId: "builder-1",
+        subject: "Need pricing clarification",
+        message: "Can you confirm if the listed price includes parking?",
+        agentId: "agent-001",
+        propertyId: "prop-1",
+        propertyTitle: "Luxury Villa",
+        priority: "medium",
+        status: "open",
+        createdBy: "Riya",
+        date: "2025-11-01",
+    },
+    {
+        id: "inq-2",
+        builderId: "builder-1",
+        subject: "Project timeline details",
+        message: "Requesting updated completion date for Sunrise Residency",
+        agentId: "agent-002",
+        projectId: "proj-1",
+        projectName: "Sunrise Residency",
+        priority: "high",
+        status: "pending",
+        createdBy: "Arjun",
+        date: "2025-11-12",
+    },
+    {
+        id: "inq-3",
+        builderId: "builder-2",
+        subject: "Discount applicability",
+        message: "Does the festival offer apply to penthouse units?",
+        agentId: "agent-003",
+        projectId: "proj-2",
+        projectName: "Tech Park Plaza",
+        priority: "low",
+        status: "closed",
+        createdBy: "Neha",
+        date: "2025-10-25",
+    },
+];
+
+export { MOCK_INQUIRY };

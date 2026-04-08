@@ -1,0 +1,229 @@
+{
+  "permissions": [
+    {
+      "id": "PERM001",
+      "name": "View Users",
+      "description": "Allows viewing user profiles and basic information",
+      "createdBy": {
+        "name": "Admin User",
+        "id": "USER001"
+      },
+      "updatedBy": {
+        "name": "Admin User",
+        "id": "USER001"
+      },
+      "createdAt": "2024-01-15T10:30:00Z",
+      "updatedAt": "2024-01-15T10:30:00Z"
+    },
+    {
+      "id": "PERM002",
+      "name": "Edit Users",
+      "description": "Allows editing user profiles, roles, and permissions",
+      "createdBy": {
+        "name": "Admin User",
+        "id": "USER001"
+      },
+      "updatedBy": {
+        "name": "Admin User",
+        "id": "USER001"
+      },
+      "createdAt": "2024-01-15T10:31:00Z",
+      "updatedAt": "2024-01-15T10:31:00Z"
+    },
+    {
+      "id": "PERM003",
+      "name": "Delete Users",
+      "description": "Allows deleting user accounts permanently",
+      "createdBy": {
+        "name": "Admin User",
+        "id": "USER001"
+      },
+      "updatedBy": {
+        "name": "Super Admin",
+        "id": "USER002"
+      },
+      "createdAt": "2024-01-15T10:32:00Z",
+      "updatedAt": "2024-01-16T14:20:00Z"
+    },
+    {
+      "id": "PERM004",
+      "name": "View Recipes",
+      "description": "Allows viewing all recipes and their details",
+      "createdBy": {
+        "name": "System Admin",
+        "id": "USER003"
+      },
+      "updatedBy": {
+        "name": "System Admin",
+        "id": "USER003"
+      },
+      "createdAt": "2024-01-16T09:15:00Z",
+      "updatedAt": "2024-01-16T09:15:00Z"
+    },
+    {
+      "id": "PERM005",
+      "name": "Create Recipes",
+      "description": "Allows creating new recipes with ingredients and steps",
+      "createdBy": {
+        "name": "System Admin",
+        "id": "USER003"
+      },
+      "updatedBy": {
+        "name": "System Admin",
+        "id": "USER003"
+      },
+      "createdAt": "2024-01-16T09:16:00Z",
+      "updatedAt": "2024-01-16T09:16:00Z"
+    },
+    {
+      "id": "PERM006",
+      "name": "Edit Recipes",
+      "description": "Allows modifying existing recipes and their components",
+      "createdBy": {
+        "name": "System Admin",
+        "id": "USER003"
+      },
+      "updatedBy": {
+        "name": "Admin User",
+        "id": "USER001"
+      },
+      "createdAt": "2024-01-16T09:17:00Z",
+      "updatedAt": "2024-01-17T11:30:00Z"
+    },
+    {
+      "id": "PERM007",
+      "name": "Delete Recipes",
+      "description": "Allows removing recipes from the system",
+      "createdBy": {
+        "name": "System Admin",
+        "id": "USER003"
+      },
+      "updatedBy": {
+        "name": "System Admin",
+        "id": "USER003"
+      },
+      "createdAt": "2024-01-16T09:18:00Z",
+      "updatedAt": "2024-01-16T09:18:00Z"
+    },
+    {
+      "id": "PERM008",
+      "name": "Manage Franchises",
+      "description": "Full control over franchise creation, editing, and deletion",
+      "createdBy": {
+        "name": "Super Admin",
+        "id": "USER002"
+      },
+      "updatedBy": {
+        "name": "Super Admin",
+        "id": "USER002"
+      },
+      "createdAt": "2024-01-17T08:00:00Z",
+      "updatedAt": "2024-01-17T08:00:00Z"
+    },
+    {
+      "id": "PERM009",
+      "name": "View Inventory",
+      "description": "Allows viewing stock levels and inventory details",
+      "createdBy": {
+        "name": "Admin User",
+        "id": "USER001"
+      },
+      "updatedBy": {
+        "name": "Admin User",
+        "id": "USER001"
+      },
+      "createdAt": "2024-01-17T08:30:00Z",
+      "updatedAt": "2024-01-17T08:30:00Z"
+    },
+    {
+      "id": "PERM010",
+      "name": "Update Inventory",
+      "description": "Allows updating stock quantities and reorder levels",
+      "createdBy": {
+        "name": "Admin User",
+        "id": "USER001"
+      },
+      "updatedBy": {
+        "name": "System Admin",
+        "id": "USER003"
+      },
+      "createdAt": "2024-01-17T08:31:00Z",
+      "updatedAt": "2024-01-18T10:15:00Z"
+    },
+    {
+      "id": "PERM011",
+      "name": "Manage Offers",
+      "description": "Create, edit, and manage promotional offers and discounts",
+      "createdBy": {
+        "name": "Super Admin",
+        "id": "USER002"
+      },
+      "updatedBy": {
+        "name": "Super Admin",
+        "id": "USER002"
+      },
+      "createdAt": "2024-01-18T09:00:00Z",
+      "updatedAt": "2024-01-18T09:00:00Z"
+    },
+    {
+      "id": "PERM012",
+      "name": "View Reports",
+      "description": "Access to system-generated reports and analytics",
+      "createdBy": {
+        "name": "Admin User",
+        "id": "USER001"
+      },
+      "updatedBy": {
+        "name": "Admin User",
+        "id": "USER001"
+      },
+      "createdAt": "2024-01-18T09:30:00Z",
+      "updatedAt": "2024-01-18T09:30:00Z"
+    },
+    {
+      "id": "PERM013",
+      "name": "Manage Roles",
+      "description": "Create and modify user roles and their permissions",
+      "createdBy": {
+        "name": "Super Admin",
+        "id": "USER002"
+      },
+      "updatedBy": {
+        "name": "Super Admin",
+        "id": "USER002"
+      },
+      "createdAt": "2024-01-19T07:45:00Z",
+      "updatedAt": "2024-01-19T07:45:00Z"
+    },
+    {
+      "id": "PERM014",
+      "name": "Approve Orders",
+      "description": "Authority to approve or reject pending orders",
+      "createdBy": {
+        "name": "System Admin",
+        "id": "USER003"
+      },
+      "updatedBy": {
+        "name": "System Admin",
+        "id": "USER003"
+      },
+      "createdAt": "2024-01-19T08:00:00Z",
+      "updatedAt": "2024-01-19T08:00:00Z"
+    },
+    {
+      "id": "PERM015",
+      "name": "Export Data",
+      "description": "Allows exporting system data to various formats",
+      "createdBy": {
+        "name": "Admin User",
+        "id": "USER001"
+      },
+      "updatedBy": {
+        "name": "Super Admin",
+        "id": "USER002"
+      },
+      "createdAt": "2024-01-19T08:30:00Z",
+      "updatedAt": "2024-01-20T10:00:00Z"
+    }
+  ]
+}

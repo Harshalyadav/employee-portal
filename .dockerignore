@@ -1,0 +1,18 @@
+# Next.js Frontend .dockerignore
+.next/
+.git
+.gitignore
+README.md
+PAYROLL_ITEMS_BY_BRANCH_API_GUIDE.md
+node_modules
+npm-debug.log*
+.npm
+.env*.local
+coverage
+.nyc_output
+test
+**/*.test.ts
+**/*.spec.ts
+.DS_Store
+*.log
+_test_/

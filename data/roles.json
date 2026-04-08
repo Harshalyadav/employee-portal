@@ -1,0 +1,280 @@
+{
+  "roles": [
+    {
+      "id": "ROLE001",
+      "name": "Super Admin",
+      "level": "System",
+      "description": "Full access to all systems and features",
+      "status": "Active",
+      "assignedUsers": 1,
+      "createdAt": "2025-10-01",
+      "permissions": [
+        {
+          "module": "User Management",
+          "view": true,
+          "create": true,
+          "edit": true,
+          "delete": true,
+          "export": true,
+          "approve": true
+        },
+        {
+          "module": "Model Management",
+          "view": true,
+          "create": true,
+          "edit": true,
+          "delete": true,
+          "export": true,
+          "approve": true
+        },
+        {
+          "module": "Franchise Management",
+          "view": true,
+          "create": true,
+          "edit": true,
+          "delete": true,
+          "export": true,
+          "approve": true
+        },
+        {
+          "module": "Recipe Management",
+          "view": true,
+          "create": true,
+          "edit": true,
+          "delete": true,
+          "export": true,
+          "approve": true
+        },
+        {
+          "module": "Menu Management",
+          "view": true,
+          "create": true,
+          "edit": true,
+          "delete": true,
+          "export": true,
+          "approve": true
+        },
+        {
+          "module": "Stock Management",
+          "view": true,
+          "create": true,
+          "edit": true,
+          "delete": true,
+          "export": true,
+          "approve": true
+        },
+        {
+          "module": "Warehouse Management",
+          "view": true,
+          "create": true,
+          "edit": true,
+          "delete": true,
+          "export": true,
+          "approve": true
+        },
+        {
+          "module": "Offers Management",
+          "view": true,
+          "create": true,
+          "edit": true,
+          "delete": true,
+          "export": true,
+          "approve": true
+        },
+        {
+          "module": "Role & Permission",
+          "view": true,
+          "create": false,
+          "edit": false,
+          "delete": false,
+          "export": false,
+          "approve": false
+        }
+      ]
+    },
+    {
+      "id": "ROLE002",
+      "name": "Franchise Manager",
+      "level": "Franchise",
+      "description": "Can manage staff and orders",
+      "status": "Active",
+      "assignedUsers": 12,
+      "createdAt": "2025-10-05",
+      "permissions": [
+        {
+          "module": "User Management",
+          "view": true,
+          "create": false,
+          "edit": false,
+          "delete": false,
+          "export": true,
+          "approve": false
+        },
+        {
+          "module": "Model Management",
+          "view": true,
+          "create": false,
+          "edit": false,
+          "delete": false,
+          "export": false,
+          "approve": false
+        },
+        {
+          "module": "Franchise Management",
+          "view": true,
+          "create": false,
+          "edit": false,
+          "delete": false,
+          "export": false,
+          "approve": false
+        },
+        {
+          "module": "Recipe Management",
+          "view": true,
+          "create": false,
+          "edit": false,
+          "delete": false,
+          "export": true,
+          "approve": false
+        },
+        {
+          "module": "Menu Management",
+          "view": true,
+          "create": true,
+          "edit": true,
+          "delete": false,
+          "export": true,
+          "approve": false
+        },
+        {
+          "module": "Stock Management",
+          "view": true,
+          "create": true,
+          "edit": true,
+          "delete": false,
+          "export": true,
+          "approve": false
+        },
+        {
+          "module": "Warehouse Management",
+          "view": true,
+          "create": false,
+          "edit": false,
+          "delete": false,
+          "export": false,
+          "approve": false
+        },
+        {
+          "module": "Offers Management",
+          "view": true,
+          "create": false,
+          "edit": false,
+          "delete": false,
+          "export": true,
+          "approve": false
+        },
+        {
+          "module": "Role & Permission",
+          "view": false,
+          "create": false,
+          "edit": false,
+          "delete": false,
+          "export": false,
+          "approve": false
+        }
+      ]
+    },
+    {
+      "id": "ROLE003",
+      "name": "Support Staff",
+      "level": "Franchise",
+      "description": "Limited access for support operations",
+      "status": "Active",
+      "assignedUsers": 25,
+      "createdAt": "2025-10-10",
+      "permissions": [
+        {
+          "module": "User Management",
+          "view": true,
+          "create": false,
+          "edit": false,
+          "delete": false,
+          "export": false,
+          "approve": false
+        },
+        {
+          "module": "Model Management",
+          "view": true,
+          "create": false,
+          "edit": false,
+          "delete": false,
+          "export": false,
+          "approve": false
+        },
+        {
+          "module": "Franchise Management",
+          "view": true,
+          "create": false,
+          "edit": false,
+          "delete": false,
+          "export": false,
+          "approve": false
+        },
+        {
+          "module": "Recipe Management",
+          "view": true,
+          "create": false,
+          "edit": false,
+          "delete": false,
+          "export": false,
+          "approve": false
+        },
+        {
+          "module": "Menu Management",
+          "view": true,
+          "create": false,
+          "edit": false,
+          "delete": false,
+          "export": false,
+          "approve": false
+        },
+        {
+          "module": "Stock Management",
+          "view": true,
+          "create": false,
+          "edit": false,
+          "delete": false,
+          "export": false,
+          "approve": false
+        },
+        {
+          "module": "Warehouse Management",
+          "view": true,
+          "create": false,
+          "edit": false,
+          "delete": false,
+          "export": false,
+          "approve": false
+        },
+        {
+          "module": "Offers Management",
+          "view": true,
+          "create": false,
+          "edit": false,
+          "delete": false,
+          "export": false,
+          "approve": false
+        },
+        {
+          "module": "Role & Permission",
+          "view": false,
+          "create": false,
+          "edit": false,
+          "delete": false,
+          "export": false,
+          "approve": false
+        }
+      ]
+    }
+  ]
+}

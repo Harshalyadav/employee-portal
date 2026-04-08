@@ -1,0 +1,162 @@
+{
+  "offers": [
+    {
+      "id": "OFF001",
+      "name": "18% Off Drinks",
+      "type": "Percentage",
+      "description": "Get 18% off on all drinks",
+      "discountValue": 18,
+      "applicableScope": "Category",
+      "selectedCategories": ["Beverages"],
+      "minimumOrderValue": 0,
+      "maxDiscountLimit": 50,
+      "autoApply": true,
+      "couponCode": null,
+      "startDate": "2025-10-18",
+      "endDate": "2025-10-28",
+      "daysActive": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      "bannerImage": "drinks-banner.jpg",
+      "displayText": "Get 18% off on all drinks",
+      "displayOrder": 1,
+      "visibility": "Featured",
+      "status": "Active",
+      "createdAt": "2025-10-15",
+      "linkedMenuItems": [
+        {
+          "menuItemName": "Cold Coffee",
+          "model": "Chaos",
+          "franchise": "All",
+          "basePrice": 128,
+          "offerPrice": 105,
+          "status": "Active"
+        },
+        {
+          "menuItemName": "Mango Smoothie",
+          "model": "Chaos",
+          "franchise": "All",
+          "basePrice": 168,
+          "offerPrice": 138,
+          "status": "Active"
+        }
+      ],
+      "linkedFranchises": [
+        {
+          "franchiseName": "Chaos Café Pune",
+          "model": "Chaos",
+          "offerApplied": 32588,
+          "offerSales": 268,
+          "status": "Active"
+        },
+        {
+          "franchiseName": "Chaos Café Delhi",
+          "model": "Chaos",
+          "offerApplied": 27888,
+          "offerSales": 450,
+          "status": "Active"
+        },
+        {
+          "franchiseName": "Chaos Café Mumbai",
+          "model": "Chaos",
+          "offerApplied": 0,
+          "offerSales": 0,
+          "status": "Inactive"
+        }
+      ],
+      "performanceMetrics": {
+        "totalSales": 85500,
+        "avgDiscountGiven": 11.88,
+        "totalOrders": 268,
+        "topPerformingFranchise": "Chaos Café Pune",
+        "offerROI": 168
+      }
+    },
+    {
+      "id": "OFF002",
+      "name": "Flat ₹100 Off",
+      "type": "Flat",
+      "description": "Get flat ₹100 off on orders above ₹500",
+      "discountValue": 100,
+      "applicableScope": "Franchise",
+      "selectedFranchises": ["FR001", "FR002"],
+      "minimumOrderValue": 500,
+      "maxDiscountLimit": 100,
+      "autoApply": true,
+      "couponCode": null,
+      "startDate": "2025-10-20",
+      "endDate": "2025-10-31",
+      "daysActive": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+      "bannerImage": "flat-off-banner.jpg",
+      "displayText": "Flat ₹100 Off on Orders Above ₹500",
+      "displayOrder": 2,
+      "visibility": "Featured",
+      "status": "Active",
+      "createdAt": "2025-10-16"
+    },
+    {
+      "id": "OFF003",
+      "name": "Buy 1 Get 1 Free",
+      "type": "Combo",
+      "description": "Buy 1 Coffee, Get 1 Free",
+      "discountValue": 0,
+      "applicableScope": "Menu",
+      "selectedMenuItems": ["MI001", "MI002"],
+      "minimumOrderValue": 0,
+      "maxDiscountLimit": 0,
+      "autoApply": false,
+      "couponCode": "BOGO2025",
+      "startDate": "2025-10-22",
+      "endDate": "2025-10-29",
+      "daysActive": ["Sat", "Sun"],
+      "bannerImage": "bogo-banner.jpg",
+      "displayText": "Buy 1 Get 1 Free on Selected Items",
+      "displayOrder": 3,
+      "visibility": "Featured",
+      "status": "Active",
+      "createdAt": "2025-10-17"
+    },
+    {
+      "id": "OFF004",
+      "name": "Early Bird Special",
+      "type": "Percentage",
+      "description": "25% off on breakfast items before 10 AM",
+      "discountValue": 25,
+      "applicableScope": "Category",
+      "selectedCategories": ["Breakfast"],
+      "minimumOrderValue": 0,
+      "maxDiscountLimit": 75,
+      "autoApply": true,
+      "couponCode": null,
+      "startDate": "2025-10-25",
+      "endDate": "2025-11-05",
+      "daysActive": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+      "bannerImage": "breakfast-banner.jpg",
+      "displayText": "25% Off on Breakfast Items",
+      "displayOrder": 4,
+      "visibility": "Featured",
+      "status": "Active",
+      "createdAt": "2025-10-18"
+    },
+    {
+      "id": "OFF005",
+      "name": "Monsoon Special",
+      "type": "Percentage",
+      "description": "15% off on all orders during monsoon season",
+      "discountValue": 15,
+      "applicableScope": "Model",
+      "selectedModels": ["MDL001"],
+      "minimumOrderValue": 0,
+      "maxDiscountLimit": 0,
+      "autoApply": true,
+      "couponCode": null,
+      "startDate": "2025-06-01",
+      "endDate": "2025-09-30",
+      "daysActive": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      "bannerImage": "monsoon-banner.jpg",
+      "displayText": "15% Off - Monsoon Season",
+      "displayOrder": 5,
+      "visibility": "Hidden",
+      "status": "Inactive",
+      "createdAt": "2025-09-01"
+    }
+  ]
+}
