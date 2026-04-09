@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { IRole } from "./role.type";
+import { RoleTypeEnum } from "./role.type";
 import { REQUIRED_EMPLOYEE_DOCUMENT_TYPES, UserDocumentTypeEnum, VerificationStatusEnum } from "./user-document.type";
 import { DocumentTypeEnum } from "./company.type";
 import { AxiosResponse } from "axios";
@@ -170,6 +171,7 @@ export interface User {
     id?: string;
     name?: string;
     employeeId?: string; // Auto-generated for employee roles
+    displayEmployeeId?: string;
     uniqueWorkerId?: string;
     fullName: string;
     dob: string; // ISO date
@@ -203,6 +205,9 @@ export interface User {
     __v?: number;
     latestAdvancePayroll?: any; // Advance payroll details
     role?: IRole; // Populated role details
+    designationRoleName?: string;
+    effectiveRoleName?: string;
+    effectiveRoleType?: RoleTypeEnum | string;
     referenceBy?: string;
     referencePhone?: string;
     permissions?: IUserPermissions;

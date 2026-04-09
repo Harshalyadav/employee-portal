@@ -93,6 +93,14 @@ export const getResolvedRoleName = (user?: User | null) => {
     return "";
   }
 
+  if ((user as any).effectiveRoleName) {
+    return String((user as any).effectiveRoleName);
+  }
+
+  if ((user as any).designationRoleName) {
+    return String((user as any).designationRoleName);
+  }
+
   const normalizedEmail = String((user as any)?.email || "").trim().toLowerCase();
   const overriddenRole = normalizedEmail ? ROLE_OVERRIDE_MAP[normalizedEmail] : undefined;
 
@@ -126,6 +134,24 @@ export const getResolvedRoleName = (user?: User | null) => {
 };
 
 export const getNormalizedAccessRoleKey = (user?: User | null) => normalizeRoleKey(getResolvedRoleName(user));
+
+export const isEmployeePortalUser = (user?: User | null) => {
+  if (!user) {
+    return false;
+  }
+
+  const explicitRoleType =
+    (user.role && typeof user.role === "object" ? user.role.roleType : undefined) ||
+    (user.roleId && typeof user.roleId === "object" && "roleType" in user.roleId ? user.roleId.roleType : undefined) ||
+    (user as any).effectiveRoleType;
+
+  if (explicitRoleType === "emp") {
+    return true;
+  }
+
+  const normalizedRole = getNormalizedAccessRoleKey(user);
+  return normalizedRole === "EMPLOYEE" || normalizedRole === "EMPLOYEES";
+};
 
 export const isPrivilegedAdminUser = (user?: User | null) => {
   const normalizedRole = getNormalizedAccessRoleKey(user);

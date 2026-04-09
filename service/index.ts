@@ -12,3 +12,4 @@ export * from "./branch-switch.service";
 export * from "./dashboard.service";
 export * from "./admin-head.service";
 export * from "./sponsor-company.service";
+export * from "./email-campaign.service";

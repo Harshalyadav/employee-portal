@@ -18,6 +18,7 @@ export * from './query/company.hook';
 export * from './query/role.hook';
 export * from './query/admin-head.hook';
 export * from './query/sponsor-company.hook';
+export * from './query/email-campaign.hook';
 export * from './query/useBranch';
 export * from './query/branch-switch.hook';
 export * from './useLotMaster';

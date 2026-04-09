@@ -24,9 +24,10 @@ const LOT_MASTER = `${API_BASE}/lot-master`;
 const SPONSOR_COMPANY = `${API_BASE}/sponsor-company`;
 const BRANCH_SWITCH_LOG = `${API_BASE}/branch-switch-log`;
 const BRANCH_TRANSFER_REQUEST = `${API_BASE}/branch-transfer-request`;
+const EMAIL_CAMPAIGN = `${API_BASE}/email-campaigns`;
 const DASHBOARD = `${API_BASE}/dashboard`;
 
-const API_ROUTE = {
+const API_ROUTE: any = {
 
 
     USER: {
@@ -1198,6 +1199,14 @@ const API_ROUTE = {
             PATH: (id: string) => `${BRANCH_TRANSFER_REQUEST}/${id}/reject`,
         },
     },
+    EMAIL_CAMPAIGN: {
+        CREATE: {
+            ID: 'createEmailCampaign',
+            LABEL: 'Create Email Campaign',
+            METHOD: 'POST',
+            PATH: EMAIL_CAMPAIGN,
+        },
+    },
     DASHBOARD: {
         METRICS: {
             ID: 'getDashboardMetrics',
@@ -1215,3 +1224,24 @@ const API_ROUTE = {
 };
 
 export { API_ROUTE };
+// --- Payment Modes & Bank Accounts (User Payment) ---
+API_ROUTE.USER_PAYMENT = {
+    PAYMENT_MODE_HISTORY: {
+        ID: 'getUserPaymentModeHistory',
+        LABEL: 'Get User Payment Mode History',
+        METHOD: 'GET',
+        PATH: (userId: string) => `/api/payment-modes/${userId}/history`,
+    },
+    BANK_ACCOUNT_HISTORY: {
+        ID: 'getUserBankAccountHistory',
+        LABEL: 'Get User Bank Account History',
+        METHOD: 'GET',
+        PATH: (userId: string) => `/api/payment-modes/${userId}/bank-accounts/history`,
+    },
+    CHANGE_PAYMENT_MODE: {
+        ID: 'changeUserPaymentMode',
+        LABEL: 'Change User Payment Mode',
+        METHOD: 'POST',
+        PATH: `/api/payment-modes/change`,
+    },
+};

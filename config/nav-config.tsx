@@ -6,6 +6,7 @@ import {
   FileText,
   Landmark,
   LayoutDashboard,
+  Mail,
   Package,
   Shield,
   TrendingUp,
@@ -45,6 +46,13 @@ export const menuItems: MenuItemConfig[] = [
     icon: <FileText className="w-5 h-5" />,
     path: "/visa-manager",
     module: ModuleNameEnum.VISA_MANAGER,
+  },
+  {
+    id: "campaigns",
+    label: "Campaigns",
+    translationKey: "campaigns",
+    icon: <Mail className="w-5 h-5" />,
+    path: "/campaigns",
   },
   {
     id: "sponsor-company",
