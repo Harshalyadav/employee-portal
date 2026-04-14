@@ -72,6 +72,7 @@ export interface IBankAccount {
     accountNumber?: string;
     ifsc?: string;
     bankHolderName?: string;
+    branchDetails?: string;
 }
 
 // Parent/Guardian Details Interface
@@ -347,6 +348,8 @@ export const createUserSchema = z.object({
         bankName: z.string().optional(),
         accountNumber: z.string().optional(),
         ifsc: z.string().regex(/^[A-Z]{4}0[A-Z0-9]{6}$/, "Invalid IFSC code format").optional(),
+        bankHolderName: z.string().optional(),
+        branchDetails: z.string().optional(),
     }).optional().refine(
         (data) => {
             if (!data) return true;
@@ -485,6 +488,8 @@ export const editUserSchema = z.object({
         bankName: z.string().optional(),
         accountNumber: z.string().optional(),
         ifsc: z.string().regex(/^[A-Z]{4}0[A-Z0-9]{6}$/, "Invalid IFSC code format").optional(),
+        bankHolderName: z.string().optional(),
+        branchDetails: z.string().optional(),
     }).optional().refine(
         (data) => {
             if (!data) return true;
@@ -773,6 +778,7 @@ export const employmentInfoSchema = z.object({
         accountNumber: z.string().optional(),
         ifsc: z.string().optional(),
         bankHolderName: z.string().optional(),
+        branchDetails: z.string().optional(),
     }).optional(),
 }).refine(
     (data) => {
@@ -786,7 +792,7 @@ export const employmentInfoSchema = z.object({
             return false;
         }
 
-        const { bankName, accountNumber, ifsc, bankHolderName } = data.bankAccount;
+        const { bankName, accountNumber, ifsc, bankHolderName, branchDetails } = data.bankAccount;
 
         // All four fields are required for ACCOUNT payment mode
         if (!bankName || bankName.trim().length === 0) {
@@ -805,6 +811,10 @@ export const employmentInfoSchema = z.object({
             return false;
         }
 
+        if (!branchDetails || branchDetails.trim().length === 0) {
+            return false;
+        }
+
         // Validate account number format (9-18 digits)
         if (!/^\d{9,18}$/.test(accountNumber)) {
             return false;
@@ -818,7 +828,7 @@ export const employmentInfoSchema = z.object({
         return true;
     },
     {
-        message: "When payment mode is ACCOUNT, all bank details are required (Bank Name, Account Holder Name, Account Number: 9-18 digits, IFSC: valid format)",
+        message: "When payment mode is ACCOUNT, all bank details are required (Bank Name, Account Holder Name, Account Number: 9-18 digits, IFSC: valid format, Branch Details)",
         path: ["bankAccount"],
     }
 );
@@ -974,6 +984,7 @@ export interface BankAccountInput {
     accountNumber: string;
     ifsc: string;
     bankHolderName: string;
+    branchDetails: string;
 }
 
 

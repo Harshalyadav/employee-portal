@@ -251,6 +251,8 @@ export const bulkPayrollItemSchema = z.object({
     bankName: z.string().optional(),
     accountNumber: z.string().optional(),
     ifsc: z.string().optional(),
+    bankHolderName: z.string().optional(),
+    branchDetails: z.string().optional(),
   }).optional(),
   advanceId: z.string().optional(),
   deductedAdvance: z.number().min(0).optional(),

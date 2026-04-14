@@ -1244,4 +1244,28 @@ API_ROUTE.USER_PAYMENT = {
         METHOD: 'POST',
         PATH: `/api/payment-modes/change`,
     },
+    BANK_DETAIL_LIST: {
+        ID: 'listUserBankDetails',
+        LABEL: 'List User Bank Details',
+        METHOD: 'GET',
+        PATH: (userId: string) => `/api/payment-modes/${userId}/bank-details`,
+    },
+    BANK_DETAIL_DETAIL: {
+        ID: 'getUserBankDetailById',
+        LABEL: 'Get User Bank Detail By Id',
+        METHOD: 'GET',
+        PATH: (userId: string, bankDetailId: string) => `/api/payment-modes/${userId}/bank-details/${bankDetailId}`,
+    },
+    UPSERT_BANK_DETAIL: {
+        ID: 'upsertUserBankDetail',
+        LABEL: 'Create Or Update User Bank Detail',
+        METHOD: 'POST',
+        PATH: `/api/payment-modes/bank-details/upsert`,
+    },
+    DELETE_BANK_DETAIL: {
+        ID: 'deleteUserBankDetail',
+        LABEL: 'Delete User Bank Detail',
+        METHOD: 'DELETE',
+        PATH: (userId: string, bankDetailId: string) => `/api/payment-modes/${userId}/bank-details/${bankDetailId}`,
+    },
 };

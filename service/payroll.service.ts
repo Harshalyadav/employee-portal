@@ -2,6 +2,7 @@ import axios from "@/lib/axios";
 import { API_ROUTE } from "@/routes";
 import {
   IPayroll,
+  IPayrollMaster,
   IPayrollLot,
   IPayrollListResponse,
   IPayrollLotListResponse,
@@ -20,6 +21,12 @@ import {
   IPayrollItemsByBranchResponse,
   IPayrollExportData,
 } from "@/types/payroll.type";
+
+export interface PayrollListFilters {
+  userId?: string;
+  branchId?: string;
+  paymentMode?: string;
+}
 
 // ============ MODERN API METHODS (Recommended) ============
 
@@ -134,19 +141,39 @@ export async function updatePayrollMaster(
 export async function getAllPayrolls(
   page: number = 1,
   limit: number = 10,
-  userId?: string
+  filters: PayrollListFilters = {}
 ): Promise<IPayrollListResponse> {
-  const response = await axios.get<IPayrollListResponse>(
+  const response = await axios.get<any>(
     API_ROUTE.PAYROLL.ALL.PATH,
     {
       params: {
         page,
         limit,
-        ...(userId && { userId }),
+        ...(filters.userId && { userId: filters.userId }),
+        ...(filters.branchId && { branchId: filters.branchId }),
+        ...(filters.paymentMode && { paymentMode: filters.paymentMode }),
       },
     }
   );
-  return response.data;
+
+  const payload = response.data as {
+    data?: IPayroll[] | IPayrollMaster[];
+    total?: number;
+    page?: number;
+    pages?: number;
+    pagination?: {
+      total?: number;
+      page?: number;
+      pages?: number;
+    };
+  };
+
+  return {
+    data: Array.isArray(payload?.data) ? (payload.data as IPayroll[]) : [],
+    total: payload?.total ?? payload?.pagination?.total ?? 0,
+    page: payload?.page ?? payload?.pagination?.page ?? page,
+    pages: payload?.pages ?? payload?.pagination?.pages ?? 1,
+  };
 }
 
 /**
